@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratique JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exercices DOM JavaScript</title>
+</head>
+
+<body>
+
+    <h1>Exercices de Manipulation du DOM</h1>
+
+    <ul>
+        <li><a href="./exo1/exercice.html">Exo 1</a></li>
+    </ul>
+
+    <!-- Section 1 : Sélection et modification du texte -->
+    <div class="section">
+        <h2>Section 1 : Sélection d'éléments</h2>
+        <p id="texte-simple">Ceci est un paragraphe simple</p>
+        <button id="button_section1" class="test">Exercice 1.1 : Changer le texte (nous sommes ici)</button>
+        <div id="resultat-1-1" class="resultat"></div>
+    </div>
+
+    <div>
+        <button id="button_fufu_mix" class="">Changer contenu</button>
+        <p id="plat_de_fufu" class="resultat">Text a changer</p>
+    </div>
+
+    <section class="section">
+        <div id="ampoule" class="ampoule"></div>
+        <div >
+            <button id="btn_allumage" class="">Allumer</button>
+            <button id="btn_eteindre" class="">Eteindre</button>
+            <button id="btn_interrupteur" class="">Interrupteur</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Recupérer user</h2>
+        <p id="affiche_message" class="resultat"></p>
+        <button id="recup_message">Recupérer</button>
+    </section>
+
+    <!-- Section 2 : innerText vs textContent -->
+    <div class="section">
+        <h2>Section 2 : innerText vs textContent</h2>
+        <p id="texte-format"><span style="color: red;">Texte en rouge</span> et texte normal</p>
+        <button onclick="exercice2_1()">Exercice 2.1 : textContent</button>
+        <button onclick="exercice2_2()">Exercice 2.2 : innerText</button>
+        <div id="resultat-2" class="resultat"></div>
+    </div>
+
+    <!-- Section 3 : innerHTML vs outerHTML -->
+    <div class="section">
+        <h2>Section 3 : innerHTML vs outerHTML</h2>
+        <div id="conteneur-html">
+            <p>Contenu original</p>
+        </div>
+        <button onclick="exercice3_1()">Exercice 3.1 : innerHTML</button>
+        <button onclick="exercice3_2()">Exercice 3.2 : outerHTML</button>
+        <div id="resultat-3" class="resultat"></div>
+    </div>
+
+    <!-- Section 4 : Créer et ajouter des éléments -->
+    <div class="section">
+        <h2>Section 4 : Créer des éléments</h2>
+        <button onclick="exercice4_1()">Exercice 4.1 : Ajouter un élément</button>
+        <button onclick="exercice4_2()">Exercice 4.2 : Ajouter plusieurs éléments</button>
+        <div id="conteneur-elements"></div>
+    </div>
+
+    <!-- Section 5 : Classes CSS -->
+    <div class="section">
+        <h2>Section 5 : Gestion des classes CSS</h2>
+        <div id="element-classe">Cliquez-moi !</div>
+        <button onclick="exercice5_1()">Exercice 5.1 : Ajouter une classe</button>
+        <button onclick="exercice5_2()">Exercice 5.2 : Basculer une classe</button>
+        <style>
+            .active {
+                background-color: yellow;
+                padding: 10px;
+            }
+
+            .highlight {
+                background-color: #ffeb3b;
+                border: 2px solid #ff9800;
+            }
+        </style>
+    </div>
+
+    <!-- Section 6 : Attributs -->
+    <div class="section">
+        <h2>Section 6 : Gestion des attributs</h2>
+        <img id="mon-image" src="https://via.placeholder.com/100" alt="Image placeholder">
+        <button onclick="exercice6_1()">Exercice 6.1 : Modifier un attribut</button>
+        <button onclick="exercice6_2()">Exercice 6.2 : Récupérer un attribut</button>
+        <div id="resultat-6" class="resultat"></div>
+    </div>
+
+    <!-- Section 7 : Styles inline -->
+    <div class="section">
+        <h2>Section 7 : Modification des styles</h2>
+        <div id="element-style">Modifiez mon style !</div>
+        <button onclick="exercice7_1()">Exercice 7.1 : Changer la couleur</button>
+        <button onclick="exercice7_2()">Exercice 7.2 : Changer plusieurs styles</button>
+    </div>
+
+    <!-- Section 8 : Parent, enfants, frères -->
+    <div class="section">
+        <h2>Section 8 : Navigation dans le DOM</h2>
+        <ul id="liste-parent">
+            <li id="premier">Premier</li>
+            <li id="deuxieme">Deuxième</li>
+            <li id="troisieme">Troisième</li>
+        </ul>
+        <button onclick="exercice8_1()">Exercice 8.1 : Accéder aux enfants</button>
+        <button onclick="exercice8_2()">Exercice 8.2 : Accéder au parent</button>
+        <div id="resultat-8" class="resultat"></div>
+    </div>
+
+    <!-- <script src="./js/pratique.js"></script> -->
+     <script src="./js/dom.js"></script>
+</body>
+
+</html>
